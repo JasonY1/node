@@ -28,7 +28,9 @@ var TodoList = React.createClass({
 });
 
 var Todo = React.createClass({
-  // write here
+  propTypes: {
+    title: React.PropTypes.number.isRequired
+  },
   render: function() {
     return (
       <tr>
